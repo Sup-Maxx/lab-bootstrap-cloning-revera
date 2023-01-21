@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <!--   <style>
+    <!--   <style>
         .container {
             margin: 0;
             padding: 0
@@ -13,43 +13,43 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Revera</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <nav class="container navbar navbar-expand-lg p-3">
+        <div class="container row">
+            <div class="col-sm-4 text-left">
+                <h1 class="title mainheader fw-bold">
+                    <a class="navbar-brand text-uppercase text-black text-decoration-none fs-2" href="#">revera</a>
+                </h1>
+            </div>
+            <div class="collapse navbar-collapse col-sm-8">
+                <ul class="navbar-nav small">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active text-danger" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                        <a class="nav-link active text-secondary" href="#">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Sample Page</a>
+                        <a class="nav-link active text-secondary" href="#">Sample Page</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+                        <a class="nav-link active text-secondary" href="#">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                        <a class="nav-link active text-secondary" href="#">Blog</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-secondary" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Parent Page
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Hello Omar</a></li>
-                            <li><a class="dropdown-item" href="#">Hello Felipe</a></li>
+                            <li><a class="dropdown-item text-secondary" href="#">Hello Omar</a></li>
+                            <li><a class="dropdown-item text-secondary" href="#">Hello Felipe</a></li>
                             <li>
                                 <hr class="dropdown-divider" />
                             </li>
@@ -60,21 +60,121 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                        <a class="nav-link active text-secondary" aria-current="page" href="#">Contact</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">
-                        Search
-                    </button>
-                </form>
+            </div>
+            <div class="navbar-toggler form-select-sm">
+                <select class="form-select form-select-sm" data-toggle="collapse" aria-label=".form-select-sm example">
+                    <!-- class="navbar-toggler" type="button" data-toggle="collapse" -->
+                    <option selected>Select a page</option>
+                    <!-- <optgroup> -->
+                    <option value="1">Home</option>
+                    <option value="2">About</option>
+                    <option value="3">Sample page</option>
+                    <option value="4">Portfolio</option>
+                    <option value="5">Blog</option>
+                    <!-- </optgroup> -->
+                    <optgroup label="Parent page >>">
+                        <option value="1">Hello Omar</option>
+                        <option value="2">Hello Felipe</option>
+                        <option value="3">Hello Carolina</option>
+                        <option value="4">Nice to see you here 🥳</option>
+                    </optgroup>
+                    <option value="6">Contact</option>
+                </select>
             </div>
         </div>
     </nav>
 
+
+
+
+
     <!-- carousel -->
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./starter-code/img/slider-1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-uppercase fs-1">etiam mauris tortor, pharetra quis lobortis in, pharetra
+                            in diam</h5>
+                        <p>Duis tempus leo vitae ipsum viverra, blandit condimentum sapien porttitor. Duis porttitor sed
+                            metus eget mollis. Curabitur bibendum imperdiet tortor, ut pulvinar purus elementum nec.
+                            Suspendisse at erat luctus; hendrerit sapien sed, consectetur erat. Maecenas dignissim
+                            suscipit orci at molestie. Aenean fringilla dolor vitae lacus lacinia eleifend. Suspendisse
+                            et libero nunc. Etiam mauris tortor, pharetra […]
+                        </p>
+                        <button class="btn btn-sm default text-uppercase fw-bold fs-6 border-2 ps-30 pe-30">Read More</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./starter-code/img/slider-2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-uppercase fs-1">falauris sollicitudin quis dolor venenatis vasilisis</h5>
+                        <p>Donec sed dolor eu augue dignissim pellentesque. Fusce semper tortor ornare, luctus sem in,
+                            dictum leo. Ut at congue quam! Maecenas luctus interdum odio, eget volutpat velit hendrerit
+                            eu? Suspendisse at magna ut sem blandit hendrerit non ut magna. Cras quis porta dolor.
+                            Aliquam erat volutpat. Phasellus fringilla feugiat libero nec volutpat. Maecenas fermentum
+                            bibendum […]
+                        </p>
+                        <button class="btn btn-sm default text-uppercase fw-bold fs-6 border-2 ps-30 pe-30">Read More</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./starter-code/img/slider-3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-uppercase fs-1">suspendisse ornare, felis feugiat suscipit pharetra</h5>
+                        <p>Quisque sit amet sagittis justo. Suspendisse ornare, felis feugiat suscipit pharetra, lorem
+                            est viverra odio;
+                            tristique tristique diam tellus id tellus. In consectetur aliquet tristique. Curabitur
+                            imperdiet leo in nisl
+                            consectetur mattis. Quisque bibendum, mauris vitae suscipit ornare; est nibh elementum
+                            mauris, eu malesuada
+                            nunc magna at justo. Proin blandit id tellus non pellentesque. Mauris […]
+                        </p>
+                        <button class="btn btn-sm default text-uppercase fw-bold fs-6 border-2 ps-30 pe-30">Read More</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./starter-code/img/slider-4.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-uppercase fs-1">fussce scelerisque nibn ac nisl luctus interdum.</h5>
+                        <p>Nam luctus velit ultricies vestibulum eleifend. Proin imperdiet varius rutrum. Curabitur
+                            placerat lacus eu ligula pellentesque euismod? Aliquam volutpat augue id nibh auctor, at
+                            varius dui semper? Suspendisse non pellentesque sapien, et sagittis erat. Quisque et
+                            dignissim elit. Sed sit amet sapien ac quam vestibulum suscipit ac id diam. Morbi accumsan
+                            est vitae tellus vulputate […]
+                        </p>
+                        <button class="btn btn-sm default text-uppercase fw-bold fs-6 border-2 ps-30 pe-30">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="./starter-code/img/slider-1.jpg" class="d-block w-100" alt="..." />
@@ -84,8 +184,7 @@
                     voluptatibus repellendus id cupiditate nulla, neque earum eius et
                     officia maxime.
                 </p>
-                <!--             <a class="btn btn-outline-info" href="">Find out more</a>
- -->
+               
                 <a class="btn btn-outline-primary" href="">success</a>
             </div>
             <div class="carousel-item">
@@ -119,10 +218,10 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
-    </div>
+    </div> -->
 
     <!-- grid with 3 -->
-    <div class="container text-center ">
+    <nav class="container text-center ">
         <div class="row text-bg-danger d-flex justify-content-around">
             <div class="col">
                 <img class="w-50" src="./starter-code/img/web-design.png" alt="" />
@@ -152,7 +251,7 @@
                 </p>
             </div>
         </div>
-    </div>
+    </nav>
 
     <!-- grid with 4 cards -->
     <div>
@@ -161,186 +260,200 @@
                 <h3 class="text-uppercase">Latest Projects</h3>
                 <p class="text-uppercase">few of the latest portfolio items</p>
             </div>
-    <hr>
+            <hr>
             <div class="row">
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./starter-code/img/project-1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./starter-code/img/project-2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./starter-code/img/project-3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./starter-code/img/project-4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-              </div>
-          </div>
-
-          <!-- grid with 4 cards -->
-          <div>
-            <div class="container text">
-                <div class="row text-left">
-                    <h3 class="text-uppercase">Latest Projects</h3>
-                    <p class="text-uppercase">few of the latest portfolio items</p>
-                </div>
-        <hr>
-                <div class="row">
-                  <div class="col">
+                <div class="col">
                     <div class="card" style="width: 18rem;">
                         <img src="./starter-code/img/project-1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                            <h6 class="text-uppercase">posted on <a href="">august 10, 2013 </a>by <a href="">admin</a></h6>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
                         </div>
-                      </div>
-                  </div>
-                  <div class="col">
+                    </div>
+                </div>
+                <div class="col">
                     <div class="card" style="width: 18rem;">
                         <img src="./starter-code/img/project-2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                            <h6 class="text-uppercase">posted on <a href="">august 10, 2013 </a>by <a href="">admin</a></h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
                         </div>
-                      </div>
-                  </div>
-                  <div class="col">
+                    </div>
+                </div>
+                <div class="col">
                     <div class="card" style="width: 18rem;">
                         <img src="./starter-code/img/project-3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                            <h6 class="text-uppercase">posted on <a href="">august 10, 2013 </a>by <a href="">admin</a></h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
                         </div>
-                      </div>
-                  </div>
-                  <div class="col">
+                    </div>
+                </div>
+                <div class="col">
                     <div class="card" style="width: 18rem;">
                         <img src="./starter-code/img/project-4.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                            <h6 class="text-uppercase">posted on <a href="">august 10, 2013 </a>by <a href="">admin</a></h6>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
                         </div>
-                      </div>
-                  </div>
-              </div>
-
-
-
-
-
-
-              <footer class="bg-light text-center text-lg-start">
-                <!-- Grid container -->
-                <div class="container p-4">
-                  <!--Grid row-->
-                  <div class="row">
-                    <!--Grid column-->
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                      <h5 class="text-uppercase">REVERA</h5>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quos iste adipisci blanditiis! Rerum alias adipisci asperiores quidem maxime atque? Deserunt aspernatur consectetur itaque unde commodi deleniti nesciunt veritatis placeat!</p>
-              
                     </div>
-                    <!--Grid column-->
-              
-                    <!--Grid column-->
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                      <h5 class="text-uppercase mb-0">META</h5>
-                      <ul class="list-unstyled">
-                        <li>
-                          <a href="#!" class="text-dark unstyled">LogIn</a>
-                        </li>
-                        <hr>
-                        <li> Entries 
-                          <a href="#!" class="text-dark">RSS</a>
-                        </li>
-                        <hr>
-                        <li>Comments
-                          <a href="#!" class="text-dark">RSS</a>
-                        </li>
-                        <hr>
-                        <li>
-                          <a href="#!" class="text-dark">Wordpress.org</a>
-                        </li>
-                        <hr class="bt-dotted">
-                      </ul>
-                    </div>
-                    <!--Grid column-->
-              
-                    <!--Grid column-->
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                      <h5 class="text-uppercase">Archives</h5>
-                      <ul class="list-unstyled mb-0">
-                        <li>
-                          <a href="#!" class="text-dark">August 2013</a>
-                        </li>
-                        <hr>
-                    </ul>
-                    </div>
-                    <!--Grid column-->
-              
-                    <!--Grid column-->
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                      <h5 class="text-uppercase mb-0">RECENT POSTS</h5>
-              
-                      <ul class="list-unstyled">
-                        <li>
-                          <a href="#!" class="text-dark">Eos esse aliquam autem sit.</a>
-                        </li>
-                        <hr>
-                        <li>
-                          <a href="#!" class="text-dark">Commodi asperiores vero consequuntur minima ut reiciendis ullam eaque?</a>
-                        </li>
-                        <hr>
-                        <li>
-                          <a href="#!" class="text-dark">Ea id libero voluptatem sunt? Doloremque, minus consequuntur.</a>
-                        </li>
-                        <hr>
-                        <li>
-                          <a href="#!" class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <!--Grid column-->
-                  </div>
-                  <!--Grid row-->
                 </div>
-                <!-- Grid container -->
-              
-                <!-- Copyright -->
-                <div class="text-left p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                <p>Copyright © 2016 revera - Just another demo site.</p>
-                <p>| Revera Theme</p>
-                </div>
-                <!-- Copyright -->
-              </footer>
+            </div>
 
-        
+            <!-- grid with 4 cards -->
+            <div>
+                <div class="container text">
+                    <div class="row text-left">
+                        <h3 class="text-uppercase">Latest Projects</h3>
+                        <p class="text-uppercase">few of the latest portfolio items</p>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./starter-code/img/project-1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                    <h6 class="text-uppercase">posted on <a href="">august 10, 2013 </a>by <a
+                                            href="">admin</a></h6>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./starter-code/img/project-2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                    <h6 class="text-uppercase">posted on <a href="">august 10, 2013 </a>by <a
+                                            href="">admin</a></h6>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./starter-code/img/project-3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                    <h6 class="text-uppercase">posted on <a href="">august 10, 2013 </a>by <a
+                                            href="">admin</a></h6>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./starter-code/img/project-4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                    <h6 class="text-uppercase">posted on <a href="">august 10, 2013 </a>by <a
+                                            href="">admin</a></h6>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-   
+
+
+
+
+
+                    <footer class="bg-light text-center text-lg-start">
+                        <!-- Grid container -->
+                        <div class="container p-4">
+                            <!--Grid row-->
+                            <div class="row">
+                                <!--Grid column-->
+                                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                    <h5 class="text-uppercase">REVERA</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quos iste adipisci
+                                        blanditiis! Rerum alias adipisci asperiores quidem maxime atque? Deserunt
+                                        aspernatur consectetur itaque unde commodi deleniti nesciunt veritatis placeat!
+                                    </p>
+
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                    <h5 class="text-uppercase mb-0">META</h5>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#!" class="text-dark unstyled">LogIn</a>
+                                        </li>
+                                        <hr>
+                                        <li> Entries
+                                            <a href="#!" class="text-dark">RSS</a>
+                                        </li>
+                                        <hr>
+                                        <li>Comments
+                                            <a href="#!" class="text-dark">RSS</a>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <a href="#!" class="text-dark">Wordpress.org</a>
+                                        </li>
+                                        <hr class="bt-dotted">
+                                    </ul>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                    <h5 class="text-uppercase">Archives</h5>
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <a href="#!" class="text-dark">August 2013</a>
+                                        </li>
+                                        <hr>
+                                    </ul>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                    <h5 class="text-uppercase mb-0">RECENT POSTS</h5>
+
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#!" class="text-dark">Eos esse aliquam autem sit.</a>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <a href="#!" class="text-dark">Commodi asperiores vero consequuntur minima
+                                                ut reiciendis ullam eaque?</a>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <a href="#!" class="text-dark">Ea id libero voluptatem sunt? Doloremque,
+                                                minus consequuntur.</a>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <a href="#!" class="text-dark">Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit.</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--Grid column-->
+                            </div>
+                            <!--Grid row-->
+                        </div>
+                        <!-- Grid container -->
+
+                        <!-- Copyright -->
+                        <div class="text-left p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                            <p>Copyright © 2016 revera - Just another demo site.</p>
+                            <p>| Revera Theme</p>
+                        </div>
+                        <!-- Copyright -->
+                    </footer>
 
 
 
@@ -354,9 +467,13 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+
+
+
+
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+                        crossorigin="anonymous"></script>
 </body>
 
 </html>
